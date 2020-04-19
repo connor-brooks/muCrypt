@@ -1,6 +1,6 @@
 # muCrypt
-![screenshot](screenshot.png)
 *μCrypt Messenger: A secure & simple end-to-end encrypted chat*
+![screenshot](screenshot.png)
 
 ## Requirements (Server)
 * Python 3
