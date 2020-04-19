@@ -1,1 +1,3 @@
 # muCrypt
+![screenshot](screenshot.png)
+
