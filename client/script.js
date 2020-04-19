@@ -1,5 +1,5 @@
 /* setup websocket and callback for received message */
-var ws = new WebSocket("wss://connor-brooks.com:8765/");
+var ws = new WebSocket("wss://your-domain.com:8765/");
 
 /* new message callback */
 ws.onmessage = function (event) {
