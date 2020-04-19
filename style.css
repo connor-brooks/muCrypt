@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Share Tech Mono';
+  src: url('ShareTechMono.ttf')  format('truetype'); 
+}
+
+body {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 1em;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	height: 100vh;
+	margin: 0;
+	padding: 0.0em 0.5em;
+
+	/* Set height, calc to take into account browser bar on iOS, etc */
+	height: 100vh;
+	height: calc(var(--vh, 1vh) * 100);
+}
+
+#logo {
+	font-size: 2em;
+	margin: 0.5em 0;
+}
+
+#rawDataBox {
+	border: 2px solid black;
+	width: 100%;
+	margin-bottom: 0.5em;
+	padding: 0.5em;
+	font-weight: bold;
+	box-sizing: border-box;
+}
+
+#rawData {
+	white-space: nowrap;
+	overflow-y: scroll;
+	font-weight: normal;
+}
+
+/* Message pane */
+#recMessageBox {
+	overflow: scroll;
+	border: 2px solid black;
+	display: flex;
+	flex-direction: column-reverse;
+	width: 100%;
+	box-sizing: border-box;
+	flex: 1 1 auto;
+}
+
+#recMessageBox ul {
+	padding: 0;
+	margin: 0;
+}
+#recMessageBox ul li {
+	list-style-type: none;
+	background: #eee;
+	margin: 0.75em;
+	padding: 0.75em;
+	border-radius: 10px;
+	word-break: break-word;
+	white-space: pre-wrap;
+}
+
+/* Input bar (key, name, message, send) */
+#inputBar {
+	padding: 0.5em 0em;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex: none;
+}
+
+.standardControl {
+	font-family: 'Share Tech Mono', monospace;
+	background: white;
+	border: 2px solid black;
+	margin: 0.2em;
+	font-size: 1em;
+	padding: 1em;
+}
+/* User and key bar */
+#settingsBar {
+	display: flex;
+	flex: 1;
+	flex-grow: 1;
+	min-width: 35%;
+	flex-basis: 35%;
+}
+
+
+/* Emoji icon input fields */
+.iconInputContainer {
+	display: inline-flex;
+	padding: 0px;
+	flex: 1;
+	line-height: 2em;
+	flex-shrink: 1;
+	min-width: 0;
+}
+
+.inputIcon {
+	margin: auto;
+	padding-left: 0.5em;
+	padding-right: 0.25em;
+}
+
+.iconInputTextbox {
+	border: 0px;
+	outline: 0px;
+	font-size: 1em;
+	height: 100%;
+	box-sizing: border-box;
+	overflow: hidden;
+	font-family: 'Share Tech Mono', monospace;
+}
+
+/* Message and send bar */
+#messageBar {
+	display: flex;
+	flex: 1;
+	flex-grow: 1;
+	flex-basis: 65%;
+	flex-shrink: 0;
+}
+
+#messageBox {
+	flex: 1;
+	padding: 0.5em;
+	outline: 0;
+	border-radius: 0px;
+}
+
+#sendButton {
+	flex: 1;
+	flex-grow: 0;
+	margin-right: 0;
+}

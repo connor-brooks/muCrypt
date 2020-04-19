@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0,
+		user-scalable=no">
+		<meta http-equiv="Pragma" content="no-cache">
+		<meta http-equiv="Expires" content="-1">
+		<title>μCrypt (beta)</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+
+		<script src="script.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body style="">
+		<h1 id="logo">μCrypt🔐 <sup><i style="font-weight: lighter">(beta)</i></sup></h1>
+		<div id="rawDataBox">RAW MSG:
+			<div id="rawData"></div>
+		</div>
+
+		<div id="recMessageBox">
+			<ul id="messages">
+			</ul>
+		</div>
+
+		<form id="inputBar">
+			<div id="settingsBar">
+				<div class="iconInputContainer standardControl">
+					<div class="inputIcon">🔑 </div>
+					<input type="password" id="keyTextbox"
+			    autocomplete="off" class="iconInputTextbox"
+			  placeholder="KEY">
+				</div>
+
+				<div class="iconInputContainer standardControl">
+					<div class="inputIcon">👤 </div>
+					<input type="text" id="usernameTextbox"
+			autocomplete="off" class="iconInputTextbox"
+		      placeholder="USER">
+				</div>
+			</div>
+
+			<div id="messageBar">
+				<textarea id="messageBox" class="standardControl"
+			      onkeydown="inputReturnHit()"
+	 placeholder="Type your message... &#10Shift + Return for newline"></textarea>
+
+				<button id="sendButton" type="button"
+			    class="standardControl" onclick="sendMessage()">SEND</button>
+			</div>
+		</form>
+	</body>
+</html>
