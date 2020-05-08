@@ -16,4 +16,4 @@
 * Clone the repo: `git clone https://github.com/connor-brooks/muCrypt.git`
 * Created dir: `mkdir /var/www/muCrypt`
 * Copy client: `cp muCrypt/client/* /var/www/muCrypt`
-* Run server: `nohup ./muCrypt/server/server.py`
+* Run server: `nohup ./muCrypt/server/server.py &`
