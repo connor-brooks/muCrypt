@@ -13,13 +13,13 @@
 
 # How to use
 ## Setup and enter python virtual environment (optional)
+This step isn't essential. If you've never used venv before, don't bother with this step.
 * `python3 -m venv mucrypt`
 * `cd mucrypt`
 * `source ./bin/activate
 
 ## Install dependencies 
 * `pip3 install websockets asyncio ssl`
-
 
 ## Grab the server script
 * `wget https://raw.githubusercontent.com/connor-brooks/muCrypt/master/server/server.py`
