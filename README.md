@@ -50,8 +50,8 @@ Using a text editor modigy the following lines of `script.js`, changing example.
 ### Run the server
 To run the server, simply run:
 * Run `nohup /path/to/your_server_script/server.py &`
-* if you are using the venv, remember to run `source /path/to/your/venv/bin/activate first.
-* Setting up an init script would be an easy way to keep the server running automatically.
+* if you are using the venv, remember to run `source /path/to/your/venv/bin/activate` first.
+* Setting up an init script would be an easy way to keep the server running automatically. For information on how to do this with a venv, see [here](https://unix.stackexchange.com/questions/409609/how-to-run-a-command-inside-a-virtualenv-using-systemd)
 
 ## Notes
 * Currently, if your connection drops due to connectivity issues or a locked phone screen, you won't be able to send or recieve messages until the page is reloaded
