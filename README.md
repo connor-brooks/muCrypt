@@ -8,6 +8,8 @@ A goal when creating µCrypt was to enable the chat to be audited very easily, b
 
 In an attempt to be fully transparent with the user, the client displays a "raw message" bar at the top, enabling the user to monitor exactly what data is being sent to/from the chat.
 
+µCrypt is intended to act as a decentralised chat platform, with users setting up their own servers for their own use, however, a demo is provided [here](https://mucrypt.connor-brooks.com/) (Please don't abuse).
+
 ## Requirements (Server)
 * Python 3
 * Python websockets
